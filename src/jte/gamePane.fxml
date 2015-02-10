@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="basepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jte.GamePaneController">
+    <children>
+        <SplitPane dividerPositions="0.25" layoutX="57.0" layoutY="140.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane fx:id="leftPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #FFFF99;">
+                    <children>
+                        <ToolBar prefHeight="40.0" prefWidth="200.0">
+                            <items>
+                                <Label fx:id="playerName" text="Player Name Here" />
+                        <Button mnemonicParsing="false" onAction="#endTurn" text="End" />
+                            </items>
+                        </ToolBar>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #FFFF99;">
+                    <children>
+                        <SplitPane dividerPositions="0.75" layoutX="284.0" layoutY="149.0" prefHeight="598.0" prefWidth="595.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane fx:id="midPane" minHeight="0.0" minWidth="0.0" prefHeight="442.0" prefWidth="596.0" style="-fx-background-color: #FFFF99;">
+                                    <children>
+                                        <ImageView fx:id="mapImg" fitHeight="596.0" fitWidth="442.0" pickOnBounds="true">
+                                            <image>
+                                                <Image url="@img/gameplay_AC14.jpg" />
+                                            </image>
+                                        </ImageView>
+                              <AnchorPane fx:id="secondmidPane" prefHeight="596.0" prefWidth="442.0" />
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane fx:id="rightPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #FFFF99;">
+                                    <children>
+                                        <VBox alignment="CENTER" layoutX="29.0" layoutY="414.0" spacing="5.0">
+                                            <children>
+                                    <Button fx:id="startGameButton" mnemonicParsing="false" onAction="#startGame" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #99FFFF;" text="Start Game" />
+                                                <Button layoutX="32.0" layoutY="363.0" mnemonicParsing="false" onAction="#flightPlan" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #99FFFF;" text="Flight Plan" />
+                                                <Button layoutX="32.0" layoutY="396.0" mnemonicParsing="false" onAction="#gameHistory" style="-fx-background-color: #99FFFF;" text="Game History" />
+                                                <Button layoutX="39.0" layoutY="421.0" mnemonicParsing="false" onAction="#about" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #99FFFF;" text="About" />
+                                                <Button layoutX="47.0" layoutY="446.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #99FFFF;" text="Save" />
+                                    <Button fx:id="cityInfoButton" mnemonicParsing="false" onAction="#cityInfo" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #99FFFF;" text="City Info: OFF" />
+                                            </children>
+                                        </VBox>
+                                        <GridPane gridLinesVisible="true" layoutX="1.0" layoutY="209.0" prefHeight="205.0" prefWidth="145.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <ImageView fx:id="mapAC14" fitHeight="105.0" fitWidth="73.0" pickOnBounds="true">
+                                                    <image>
+                                                        <Image url="@img/gameplay_AC14.jpg" />
+                                                    </image>
+                                                </ImageView>
+                                                <ImageView fx:id="mapDF14" fitHeight="104.0" fitWidth="73.0" pickOnBounds="true" GridPane.columnIndex="1">
+                                                    <image>
+                                                        <Image url="@img/gameplay_DF14.jpg" />
+                                                    </image>
+                                                </ImageView>
+                                                <ImageView fx:id="mapAC58" fitHeight="102.0" fitWidth="73.0" pickOnBounds="true" GridPane.rowIndex="1">
+                                                    <image>
+                                                        <Image url="@img/gameplay_AC58.jpg" />
+                                                    </image>
+                                                </ImageView>
+                                                <ImageView fx:id="mapDF58" fitHeight="103.0" fitWidth="73.0" pickOnBounds="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                    <image>
+                                                        <Image url="@img/gameplay_DF58.jpg" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </GridPane>
+                                        <ImageView fx:id="dice" fitHeight="57.0" fitWidth="58.0" layoutX="44.0" layoutY="99.0" pickOnBounds="true">
+                                            <image>
+                                                <Image url="@img/die_1.jpg" />
+                                            </image>
+                                        </ImageView>
+                              <VBox alignment="TOP_CENTER" layoutX="36.0" layoutY="8.0">
+                                 <children>
+                                                <HBox alignment="CENTER" layoutX="11.0" layoutY="5.0">
+                                                    <children>
+                                                        <Text fx:id="playerTurnText" strokeType="OUTSIDE" strokeWidth="0.0" text="player1" />
+                                                        <Text layoutX="50.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="'s turn" />
+                                                    </children>
+                                                </HBox>
+                                                <ImageView fx:id="rightPlayerImg" fitHeight="75.0" fitWidth="43.0" pickOnBounds="true">
+                                                    <image>
+                                                        <Image url="@img/piece_green.png" />
+                                                    </image>
+                                                </ImageView>
+                                 </children>
+                              </VBox>
+                                        <Label fx:id="cityname" layoutX="5.0" layoutY="184.0" prefHeight="25.0" prefWidth="138.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font></Label>
+                              <Label layoutX="15.0" layoutY="167.0" text="Moves left:" />
+                              <Label fx:id="RmovesLeft" layoutX="80.0" layoutY="167.0" />
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

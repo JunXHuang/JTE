@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CCFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jte.AboutPaneController">
+   <children>
+   
+      <VBox layoutX="8.0" layoutY="73.0">
+         <children>
+            <Label layoutX="8.0" layoutY="73.0" prefHeight="25.0" prefWidth="578.0" text="Journey through Europe is a family board game published by Ravensburger. The board is a map of Europe" />
+            <Label layoutX="8.0" layoutY="98.0" prefHeight="25.0" prefWidth="578.0" text="with various major cities marked, for example, Athens, Amsterdam and London. The players are given a " />
+            <Label layoutX="8.0" layoutY="130.0" prefHeight="23.0" prefWidth="578.0" text="home city from which they will begin and are then dealt a number of cards with various other cities on them." />
+            <Label layoutX="8.0" layoutY="154.0" prefHeight="24.0" prefWidth="578.0" text="They must plan a route between each of the cities in their hand of cards. On each turn they throw a die and " />
+            <Label layoutX="8.0" layoutY="171.0" prefHeight="23.0" prefWidth="578.0" text="move between the cities. The winner is the first player to visit each of their cities and then return to their " />
+            <Label layoutX="8.0" layoutY="192.0" prefHeight="23.0" prefWidth="578.0" text="home base." />
+         </children>
+      </VBox>
+      <Label layoutX="162.0" layoutY="21.0" text="Journey Through Europe">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="373.0" layoutY="216.0" text="From Wikipedia, the free encyclopedia" />
+      <VBox layoutX="14.0" layoutY="335.0">
+         <children>
+            <Label layoutX="144.0" layoutY="296.0" text="Creator: Jun Xiong Huang" />
+            <Label layoutX="30.0" layoutY="296.0" text="Phone: 718-635-2186" />
+            <Label layoutX="280.0" layoutY="296.0" text="E-Mail: junxiong.huang@stonybrook.edu" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

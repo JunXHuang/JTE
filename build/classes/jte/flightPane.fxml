@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="flightPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="560.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jte.FlightPaneController">
+   <children>
+      <ImageView fx:id="flightMap" disable="true" fitHeight="616.0" fitWidth="560.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/Fligh%20Plan.JPG" />
+         </image>
+      </ImageView>
+      <Button layoutX="28.0" layoutY="29.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="25.0" prefWidth="95.0" text="Exit" />
+   </children>
+</AnchorPane>

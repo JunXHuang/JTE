@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="mainAnchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jte.SplashScreenController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/Game.JPG" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="363.0" layoutY="394.0" spacing="5.0">
+         <children>
+            <Button fx:id="startButton" layoutX="331.0" layoutY="216.0" mnemonicParsing="false" onAction="#startButton" prefHeight="39.0" prefWidth="74.0" text="Start" textAlignment="CENTER" textFill="#2532e5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="loadButton" layoutX="331.0" layoutY="251.0" mnemonicParsing="false" onAction="#loadButton" prefHeight="39.0" prefWidth="74.0" text="Load" textAlignment="CENTER" textFill="#2532e5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="aboutButton" layoutX="331.0" layoutY="276.0" mnemonicParsing="false" onAction="#aboutButton" text="About" textAlignment="CENTER" textFill="#2532e5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="quitButton" layoutX="331.0" layoutY="301.0" mnemonicParsing="false" onAction="#quitButton" prefHeight="39.0" prefWidth="74.0" text="Quit" textAlignment="CENTER" textFill="#2532e5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
